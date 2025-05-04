@@ -6,30 +6,33 @@ import { useState } from 'react'
 
 function App() {
  const [isactive,setisactive]=useState({
-  cart : true,
-  Status:'active'
+  cart :true,
+  Status:'cart'
  })
+//  console.log(isactive)
 const handleisActive =(Status)=>{
-    if(Status == 'cart'){
-        setisactive({
-           cart : true,
-          Status:'active'
-        })
-    }
-    else{
+    if(Status == "cart"){
       setisactive({
-         cart :false,
-        Status:'active'
+        cart : true,
+        Status:'cart'
+      })
+    }else{
+      setisactive({
+        cart:false,
+        Status:'about'
       })
     }
 }
+
   return (
     <div>
     <Navbar></Navbar>
     {/* All Product Div */}
     <div className='flex justify-between '>
       <Allproducts></Allproducts>
-      <Cartcontainer></Cartcontainer>
+      <Cartcontainer
+      isactive={isactive}
+      handleisActive={handleisActive}></Cartcontainer>
     </div>
     
     </div>
