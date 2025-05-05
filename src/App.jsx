@@ -5,6 +5,10 @@ import Cartcontainer from './components/Cartscontainer/Cartcontainer'
 import { useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer/Footer'
+
+
+
 function App() {
  const [isactive,setisactive]=useState({
   cart :true,
@@ -71,7 +75,9 @@ const handelselectedProduct=(product)=>{
       isactive={isactive}
       handleisActive={handleisActive}></Cartcontainer>
     </div>
-    
+     <div className='mt-20'>
+       <Footer></Footer>
+     </div>
     </div>
   )
 }
