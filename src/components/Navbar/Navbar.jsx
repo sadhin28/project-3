@@ -14,8 +14,8 @@ const Navbar = () => {
                 <ul className='font-bold  lg:text-3xl md:text-2xl flex items-center lg:gap-10 md:gap-6 gap-5'>
                     <li>HOME</li>
                     <li>PRODUCT</li>
-                    <li>CART</li>
-                    <li>$ 500</li>
+                    <li>CART{}</li>
+                    <li>$ {5000}</li>
                 </ul>
 
             </div>

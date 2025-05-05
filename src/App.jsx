@@ -3,7 +3,8 @@ import Navbar from './components/Navbar/Navbar'
 import Allproducts from './components/Allproducts/Allproducts'
 import Cartcontainer from './components/Cartscontainer/Cartcontainer'
 import { useState } from 'react'
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
  const [isactive,setisactive]=useState({
   cart :true,
@@ -23,11 +24,23 @@ const handleisActive =(Status)=>{
       })
     }
 }
+
+//tost msg
+
 const [selectedProduct,setsectedProducts]=useState([])
 const handelselectedProduct=(product)=>{
-  const newselecProduct =[...selectedProduct,product]
-   setsectedProducts(newselecProduct)
+  const isexist = selectedProduct.find(p=>p.id == product.id)
+  if(isexist){
+    toast.success('🦄 Success! Your action was successful.');
+    
+  }else{
+    const newselecProduct =[...selectedProduct,product]
+    setsectedProducts(newselecProduct)
+  }
+ 
+   
 }
+
   return (
     <div>
     <Navbar></Navbar>

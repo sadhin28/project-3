@@ -1,4 +1,5 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
 const Product = ({ products , handelselectedProduct}) => {
     const { name, image, price, description } = products
@@ -12,6 +13,7 @@ const Product = ({ products , handelselectedProduct}) => {
                 <p>Description : {description}</p>
                 <div className='text-start p-3 '>
                 <button onClick={()=> handelselectedProduct(products)} className=' text-xl lg:text-2xl btn font-bold bg-black text-white mb-5 w-full'>Add To Cart</button>
+                <ToastContainer position='top-center'/>
             </div>
             </div>
             
