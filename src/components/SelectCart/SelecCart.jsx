@@ -1,7 +1,7 @@
 const SelecCart = ({selectedProduct,handelDelate}) => {
     return (
         <div>
-            <div className="card bg-base-600 lg:h-20  md:w-60 mx-auto lg:w-120   shadow-sm">
+            <div className="card bg-base-600 lg:h-20   md:w-50 mx-auto lg:w-90   shadow-sm">
                 
                 <div className=" font-bold text-xl  card-body grid ">
                   <div className="grid lg:flex text-sm lg:justify-between items-center gap-5">
