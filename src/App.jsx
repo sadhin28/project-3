@@ -32,7 +32,7 @@ const handelselectedProduct=(product)=>{
     <div>
     <Navbar></Navbar>
     {/* All Product Div */}
-    <div className='flex justify-between '>
+    <div className='flex justify-between mt-10'>
       <Allproducts 
         handelselectedProduct={ handelselectedProduct}></Allproducts>
       

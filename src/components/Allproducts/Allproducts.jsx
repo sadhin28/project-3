@@ -11,7 +11,7 @@ const Allproducts = ({ handelselectedProduct}) => {
      })
    },[])
     return (
-        <div className="w-2/3 border border-amber-200 text-center grid  gap-10">
+        <div className="w-2/3  text-center grid  gap-10">
             <h1 className="text-2xl font-bold">Available Products : {products.length}</h1>
             <div className=" grid gap-10 lg:grid-cols-3 md:grid-cols-2">
                 {
