@@ -7,7 +7,7 @@ const Navbar = ({selectedProduct,price}) => {
         <div className="   px-10 p-8 flex justify-between items-center navbar bg-base-100 shadow-sm">
 
             <div>
-                <h1 className='font-bold  lg:text-3xl md:text-2xl'>LOGO</h1>
+                <h1 className='font-bold  lg:text-3xl md:text-2xl'>MJS Gadgets</h1>
             </div>
 
             <div>

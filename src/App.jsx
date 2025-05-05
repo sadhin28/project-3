@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Allproducts from './components/Allproducts/Allproducts'
 import Cartcontainer from './components/Cartscontainer/Cartcontainer'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer/Footer'
@@ -59,6 +59,17 @@ const handelselectedProduct=(product)=>{
     
    
 }
+const [profiles,setprofiles]=useState(arguments)
+
+useEffect(()=>{
+   fetch('profile.json')
+   .then(res=>res.json())
+   .then(data=>{
+     setprofiles(data)
+     
+   }
+ )
+},[])
 
   return (
     <div>
@@ -76,7 +87,7 @@ const handelselectedProduct=(product)=>{
       handleisActive={handleisActive}></Cartcontainer>
     </div>
      <div className='mt-20'>
-       <Footer></Footer>
+       <Footer profiles={profiles}></Footer>
      </div>
     </div>
   )
