@@ -11,7 +11,8 @@ const Cartcontainer = ({handleisActive,isactive, selectedProduct}) => {
                 <button onClick={()=>handleisActive('cart')} className={` ${isactive.cart?'btn active':'btn'}`}>CART</button>
                 <button onClick={()=>handleisActive('about')} className={`${isactive.cart?'btn':'active btn'}`}>ABOUT</button>
             </div>
-            <div>
+            <div className="divider"></div>
+            <div className="mt-3">
                     {
                         isactive.cart?<Cart selectedProduct={selectedProduct}></Cart>:<About></About>
                     }

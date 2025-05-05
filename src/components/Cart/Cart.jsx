@@ -4,7 +4,7 @@ const Cart = ({selectedProduct}) => {
  
 
     return (
-        <div>
+        <div className="grid gap-5">
             {
                 selectedProduct.map(product=><SelecCart selectedProduct={product}></SelecCart>)
             }
