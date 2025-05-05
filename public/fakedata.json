@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 14 Pro",
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-3.jpg",
+      "price": 999,
+      "description": "Apple's premium phone with A16 Bionic chip and Dynamic Island."
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23 Ultra",
+      "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s23-ultra-5g-1.jpg",
+      "price": 1199,
+      "description": "Powerful Android with 200MP camera and built-in S Pen."
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel 8",
+      "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-1.jpg",
+      "price": 899,
+      "description": "Clean Android experience with Google AI features."
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 11",
+      "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-11-3.jpg",
+      "price": 749,
+      "description": "Flagship killer with fast charging and AMOLED display."
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi 13 Pro",
+      "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13-pro-black-1.jpg",
+      "price": 799,
+      "description": "Leica camera system and stunning ceramic body."
+    },
+    {
+      "id": 6,
+      "name": "Nothing Phone (2)",
+      "image": "https://fdn2.gsmarena.com/vv/pics/nothing/nothing-phone2-1_.jpg",
+      "price": 699,
+      "description": "Minimalist design with transparent back and LED lighting."
+    },
+    {
+      "id": 7,
+      "name": "Sony Xperia 1 V",
+      "image": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-v-1.jpg",
+      "price": 999,
+      "description": "Cinema-grade screen and pro-level camera features."
+    },
+    {
+      "id": 8,
+      "name": "Motorola Edge+",
+      "image": "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-plus-2.jpg",
+      "price": 699,
+      "description": "Edge-to-edge display and high refresh rate performance."
+    },
+    {
+      "id": 9,
+      "name": "Asus ROG Phone 7",
+      "image": "https://fdn2.gsmarena.com/vv/pics/asus/asus-rog-phone-7-1.jpg",
+      "price": 1099,
+      "description": "Gaming beast with 165Hz display and advanced cooling."
+    },
+    {
+      "id": 10,
+      "name": "Realme GT 3",
+      "image": "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-neo5-1.jpg",
+      "price": 599,
+      "description": "Affordable flagship with 240W super fast charging."
+    }
+  ]
+  
