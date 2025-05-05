@@ -25,8 +25,16 @@ const handleisActive =(Status)=>{
     }
 }
 
-//tost msg
 
+
+const [price,setprice]=useState(5000)
+const handleincrementPrice=(pr)=>{
+      setprice(price+pr)
+}
+
+const handeldecrementPrice=(pr)=>{
+  
+}
 const [selectedProduct,setsectedProducts]=useState([])
 const handelselectedProduct=(product)=>{
   const isexist = selectedProduct.find(p=>p.id == product.id)
@@ -34,16 +42,18 @@ const handelselectedProduct=(product)=>{
     toast.error('This product has already been added to the card. Cannot be added more than once');
     
   }else{
+    handleincrementPrice(product.price)
     const newselecProduct =[...selectedProduct,product]
     setsectedProducts(newselecProduct)
   }
-  
+    
    
 }
 
   return (
     <div>
-    <Navbar></Navbar>
+   
+    <Navbar price={price} selectedProduct={selectedProduct}></Navbar>
     {/* All Product Div */}
     <div className='flex justify-between mt-10'>
       <Allproducts 
