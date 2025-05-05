@@ -3,7 +3,7 @@ import React from 'react';
 const Product = ({ products }) => {
     const { name, image, price, description } = products
     return (
-        <div class="mx-5 card bg-base-600 w-70 h-120 my-auto mx-auto not-visited:shadow-sm">
+        <div class="card bg-base-600 lg:w-70 md:w-60 h-130 my-auto mx-auto not-visited:shadow-sm">
             <img className=' w-60 h-70 p-3 mx-auto mt-5' src={image} alt="" />
             <div className=' mb-3 p-3 text-start font-bold'>
                 <h1 className='card-title text-xl lg:text-2xl'>{name}</h1>
