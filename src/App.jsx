@@ -25,8 +25,8 @@ const handleisActive =(Status)=>{
 }
 const [selectedProduct,setsectedProducts]=useState([])
 const handelselectedProduct=(product)=>{
-    setsectedProducts(product)
-    console.log(product)
+  const newselecProduct =[...selectedProduct,product]
+   setsectedProducts(newselecProduct)
 }
   return (
     <div>

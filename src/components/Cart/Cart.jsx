@@ -1,9 +1,13 @@
+import SelecCart from "../SelectCart/SelecCart";
 
 const Cart = ({selectedProduct}) => {
-    console.log(selectedProduct)
+ 
+
     return (
         <div>
-            
+            {
+                selectedProduct.map(product=><SelecCart selectedProduct={product}></SelecCart>)
+            }
         </div>
     );
 };
