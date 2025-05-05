@@ -1,8 +1,9 @@
 
-const Cart = () => {
+const Cart = ({selectedProduct}) => {
+    console.log(selectedProduct)
     return (
         <div>
-            <h2>Cart</h2>
+            
         </div>
     );
 };

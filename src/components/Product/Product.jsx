@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Product = ({ products }) => {
+const Product = ({ products , handelselectedProduct}) => {
     const { name, image, price, description } = products
+    
     return (
         <div class="card bg-base-600 lg:w-70 md:w-60 h-130 my-auto mx-auto not-visited:shadow-sm">
             <img className=' w-60 h-70 p-3 mx-auto mt-5' src={image} alt="" />
@@ -10,7 +11,7 @@ const Product = ({ products }) => {
                 <p>Price : {price}</p>
                 <p>Description : {description}</p>
                 <div className='text-start p-3 '>
-                <button className=' text-xl lg:text-2xl btn font-bold bg-black text-white mb-5 w-full'>Add To Cart</button>
+                <button onClick={()=> handelselectedProduct(products)} className=' text-xl lg:text-2xl btn font-bold bg-black text-white mb-5 w-full'>Add To Cart</button>
             </div>
             </div>
             

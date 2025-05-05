@@ -24,13 +24,21 @@ const handleisActive =(Status)=>{
     }
 }
 const [selectedProduct,setsectedProducts]=useState([])
+const handelselectedProduct=(product)=>{
+    setsectedProducts(product)
+    console.log(product)
+}
   return (
     <div>
     <Navbar></Navbar>
     {/* All Product Div */}
     <div className='flex justify-between '>
-      <Allproducts></Allproducts>
+      <Allproducts 
+        handelselectedProduct={ handelselectedProduct}></Allproducts>
+      
       <Cartcontainer
+       
+      selectedProduct={selectedProduct}
       isactive={isactive}
       handleisActive={handleisActive}></Cartcontainer>
     </div>
