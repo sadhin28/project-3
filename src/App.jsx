@@ -31,13 +31,13 @@ const [selectedProduct,setsectedProducts]=useState([])
 const handelselectedProduct=(product)=>{
   const isexist = selectedProduct.find(p=>p.id == product.id)
   if(isexist){
-    toast.success('🦄 Success! Your action was successful.');
+    toast.error('This product has already been added to the card. Cannot be added more than once');
     
   }else{
     const newselecProduct =[...selectedProduct,product]
     setsectedProducts(newselecProduct)
   }
- 
+  
    
 }
 
