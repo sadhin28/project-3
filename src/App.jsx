@@ -23,7 +23,7 @@ const handleisActive =(Status)=>{
       })
     }
 }
-
+const [selectedProduct,setsectedProducts]=useState([])
   return (
     <div>
     <Navbar></Navbar>
