@@ -1,4 +1,4 @@
-const SelecCart = ({selectedProduct}) => {
+const SelecCart = ({selectedProduct,handelDelate}) => {
     return (
         <div>
             <div className="card bg-base-600 lg:h-20  md:w-60 mx-auto lg:w-120   shadow-sm">
@@ -10,7 +10,7 @@ const SelecCart = ({selectedProduct}) => {
                     </div>
                   <h1>{selectedProduct.name}</h1>
                   <div>
-                    <button className="btn">Delate</button>
+                    <button onClick={()=>handelDelate(selectedProduct.id)} className="btn">Delate</button>
                   </div>
                   </div>
                  

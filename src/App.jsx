@@ -32,10 +32,16 @@ const handleincrementPrice=(pr)=>{
       setprice(price+pr)
 }
 
-const handeldecrementPrice=(pr)=>{
-  
-}
 const [selectedProduct,setsectedProducts]=useState([])
+const handeldecracePrice=(id)=>{
+      const product=selectedProduct.find((p)=>p.id == id);
+      setprice(price-product.price)
+}
+const handelDelate=(id)=>{
+  handeldecracePrice(id)
+    const newProduct=selectedProduct.filter((p)=>p.id !== id);
+    setsectedProducts(newProduct)
+}
 const handelselectedProduct=(product)=>{
   const isexist = selectedProduct.find(p=>p.id == product.id)
   if(isexist){
@@ -60,7 +66,7 @@ const handelselectedProduct=(product)=>{
         handelselectedProduct={ handelselectedProduct}></Allproducts>
       
       <Cartcontainer
-       
+      handelDelate={handelDelate}
       selectedProduct={selectedProduct}
       isactive={isactive}
       handleisActive={handleisActive}></Cartcontainer>

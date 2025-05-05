@@ -1,7 +1,7 @@
 import About from "../About/About";
 import Cart from "../Cart/Cart";
 import './Cartcontainer.css'
-const Cartcontainer = ({handleisActive,isactive, selectedProduct}) => {
+const Cartcontainer = ({handleisActive,isactive, selectedProduct,handelDelate}) => {
     //  console.log(isactive)
 //    console.log(handleisActive)
     return (
@@ -14,7 +14,7 @@ const Cartcontainer = ({handleisActive,isactive, selectedProduct}) => {
             <div className="divider md:w-60 mx-auto lg:w-120"></div>
             <div className="mt-3">
                     {
-                        isactive.cart?<Cart selectedProduct={selectedProduct}></Cart>:<About></About>
+                        isactive.cart?<Cart handelDelate={handelDelate} selectedProduct={selectedProduct}></Cart>:<About></About>
                     }
             </div>
         </div>
