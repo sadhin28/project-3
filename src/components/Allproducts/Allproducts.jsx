@@ -11,9 +11,9 @@ const Allproducts = ({ handelselectedProduct}) => {
      })
    },[])
     return (
-        <div className="w-2/3  text-center grid  gap-10">
-            <h1 className="text-2xl font-bold">Available Products : {products.length}</h1>
-            <div className=" mt-5 grid gap-10 lg:grid-cols-3 md:grid-cols-2">
+        <div className="w-2/3 text-center">
+            <h1 className=" md:text-xl lg:text-2xl font-bold">Available Products : {products.length}</h1>
+            <div className="gap-10 mt-5 grid lg:grid-cols-3 md:grid-cols-2">
                 {
                     products.map((p)=><Product key={p.id}
                     handelselectedProduct={ handelselectedProduct}

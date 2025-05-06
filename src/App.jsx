@@ -72,13 +72,13 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className='max-w-7xl mx-auto '>
+    <div className='px-5'>
    
-    <div >
+    <div className='' >
     <Navbar price={price} selectedProduct={selectedProduct}></Navbar>
     </div>
     {/* All Product Div */}
-    <div className=' mt-30 flex justify-between'>
+    <div className='flex lg:flex  justify-between mt-10 gap-5'>
       <Allproducts 
         handelselectedProduct={ handelselectedProduct}></Allproducts>
       

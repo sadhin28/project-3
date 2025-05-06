@@ -5,9 +5,9 @@ const Cartcontainer = ({handleisActive,isactive, selectedProduct,handelDelate}) 
     //  console.log(isactive)
 //    console.log(handleisActive)
     return (
-        <div className=" text-center w-1/3 ">
-            <h1 className="text-2xl font-bold">Cart & About</h1>
-            <div className="flex justify-center gap-5 mt-5 ">
+        <div className="text-center w-1/3 ">
+            <h1 className="lg:text-2xl md:tex-xl font-bold">Cart & About</h1>
+            <div className="grid lg:flex md:flex gap-2 lg:justify-center md:justify-center">
                 <button onClick={()=>handleisActive('cart')} className={` ${isactive.cart?'btn active':'btn'}`}>CART</button>
                 <button onClick={()=>handleisActive('about')} className={`${isactive.cart?'btn':'active btn'}`}>ABOUT</button>
             </div>

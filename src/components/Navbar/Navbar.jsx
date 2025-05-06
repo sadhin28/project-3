@@ -4,15 +4,15 @@ const Navbar = ({selectedProduct,price}) => {
    
     return (
 
-        <div className="max-w-7xl mx-auto fixed top-0 z-60 h-20 px-10 flex justify-between items-center navbar bg-base-100 shadow-sm">
+        <div className="flex  items-center justify-between content-center shadow-sm px-2 h-20">
 
             <div>
                 <h1 className='font-bold  lg:text-3xl md:text-2xl'>MJS Gadgets</h1>
             </div>
 
-            <div>
+            <div className=''>
 
-                <ul className='font-bold  lg:text-3xl md:text-2xl flex items-center lg:gap-10 md:gap-6 gap-5'>
+                <ul className='font-bold flex gap-3 lg:gap-6 mg:gap-4 justify-center '>
                     <li>HOME</li>
                     <li>PRODUCT</li>
                     <li>CART {selectedProduct.length}</li>
