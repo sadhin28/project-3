@@ -4,11 +4,11 @@ const Navbar = ({selectedProduct,price}) => {
    
     return (
 
-        <div className="flex  items-center justify-between content-center shadow-sm px-2 h-20">
+        <div className="  md:flex  md:items-center md:justify-between md:content-center shadow-sm px-2 h-20">
 
-            <div>
-                <h1 className='font-bold  lg:text-3xl md:text-2xl'>MJS Gadgets</h1>
-            </div>
+            
+                <h1 className=' text-center font-bold  lg:text-3xl md:text-2xl'>MJS Gadgets</h1>
+            
 
             <div className=''>
 
