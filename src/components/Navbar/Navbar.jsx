@@ -5,13 +5,13 @@ const Navbar = ({selectedProduct,price,profiles}) => {
     return (
       <div className=''>
         
-        <div className=" flex items-center justify-between px-5 py-5 md:py-2">
+        <div className=" flex items-center justify-between md:px-5 px-2 py-5 md:py-2">
 
             
               <div> <img className='w-10 md:w-20 rounded-full' src={profiles[0].img} alt="" /></div>
             
                <div>
-                 <ul className='flex gap-5 font-bold items-center'>
+                 <ul className='flex md:gap-5 gap-3  font-bold items-center'>
                      <li>HOME</li>
                     <li>PRODUCT</li>
                     <li>CART {selectedProduct.length}</li>
