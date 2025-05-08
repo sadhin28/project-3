@@ -3,7 +3,7 @@ const Footer = ({profiles}) => {
    
     return (
         <div>
-            <footer class=" rounded-tr-2xl rounded-tl-2xl  lg:h-50 footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+            <footer class=" rounded-tr-2xl rounded-tl-2xl  lg:h-50 footer sm:footer-horizontal bg-gray-900 text-neutral-content p-10">
   <aside>
      <img className="w-20 rounded-full" src={profiles[0].img} alt="" />
    <div className="font-bold ">
