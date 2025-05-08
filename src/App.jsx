@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer/Footer'
+import Divider from 'daisyui/components/divider'
 
 
 
@@ -72,13 +73,14 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className='px-5'>
+    <div className=''>
    
-    <div className='' >
-    <Navbar price={price} selectedProduct={selectedProduct}></Navbar>
+    <div className=' rounded-bl-2xl rounded-br-2xl z-40 mb-40 fixed top-0 w-11/12 mx-auto bg-gray-900  text-white ' >
+        <Navbar profiles={profiles} price={price} selectedProduct={selectedProduct}></Navbar>
     </div>
+    
     {/* All Product Div */}
-    <div className='flex lg:flex  justify-between mt-10 gap-5'>
+    <div className='flex lg:flex  justify-between mt-30 gap-5'>
       <Allproducts 
         handelselectedProduct={ handelselectedProduct}></Allproducts>
       

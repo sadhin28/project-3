@@ -1,26 +1,25 @@
 import React from 'react';
 
-const Navbar = ({selectedProduct,price}) => {
-   
+const Navbar = ({selectedProduct,price,profiles}) => {
+  
     return (
-
-        <div className=" grid justify-center items-center md:flex  md:items-center md:justify-between md:content-center shadow-sm px-2 h-20">
+      <div className=''>
+        
+        <div className=" flex items-center justify-between px-5 py-5 md:py-2">
 
             
-                <h1 className=' text-center font-bold  lg:text-3xl md:text-2xl'>MJS Gadgets</h1>
+              <div> <img className='w-10 md:w-20 rounded-full' src={profiles[0].img} alt="" /></div>
             
-
-            <div className=''>
-
-                <ul className='font-bold flex gap-3 lg:gap-6 mg:gap-4 justify-center '>
-                    <li>HOME</li>
+               <div>
+                 <ul className='flex gap-5 font-bold items-center'>
+                     <li>HOME</li>
                     <li>PRODUCT</li>
                     <li>CART {selectedProduct.length}</li>
-                    <li>$ {price}</li>
-                </ul>
-
-            </div>
+                    <li className=' shadow-2xs font-black text-black text-sm border-emerald-500 border-2 px-3 my-2 bg-amber-500 rounded-tr-2xl rounded-bl-2xl'>$ {price}</li>
+                 </ul>
+               </div>
         </div>
+      </div>
 
     );
 };
