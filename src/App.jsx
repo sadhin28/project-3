@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer/Footer'
 import Divider from 'daisyui/components/divider'
-
+import { ToastContainer } from 'react-toastify'
 
 
 function App() {
@@ -93,6 +93,7 @@ useEffect(()=>{
      <div className='mt-20'>
        <Footer profiles={profiles}></Footer>
      </div>
+     <ToastContainer position='top-center' autoClose='1200' />
     </div>
   )
 }
